@@ -1,1 +1,10 @@
-# CS-320-Portfolio
+# Contact Service Project – Reflection
+
+## Ensuring Code Is Functional and Secure
+I ensure my code is functional and secure by combining defensive programming with thorough testing. In the Contact and ContactService classes, I enforced strict input validation (such as length limits and null checks) so invalid data is rejected immediately rather than causing hidden bugs later. I used exceptions intentionally to fail fast when constraints are violated, which improves reliability and makes errors easier to diagnose. Unit tests in ContactTest and ContactServiceTest allowed me to verify both normal behavior and edge cases, ensuring that updates, deletions, and invalid inputs behave exactly as expected. From a security standpoint, validating inputs and avoiding unintended state changes reduces the risk of data corruption and misuse, even in a simple in-memory service.
+
+## Interpreting User Needs and Incorporating Them
+I interpret user needs by translating requirements into clear, testable behaviors. For this project, user needs were expressed as constraints (for example, required fields, maximum character lengths, and unique identifiers) and actions (add, update, delete, and retrieve contacts). I incorporated these needs directly into the design of the Contact model and the methods in ContactService, ensuring each requirement was reflected in both the implementation and the tests. Writing tests first or alongside the implementation helped me stay aligned with the intended behavior, because failing tests clearly showed when a requirement was not yet met or was implemented incorrectly.
+
+## My Approach to Designing Software
+My approach to software design starts with simplicity and clarity, then builds structure around requirements. I separated responsibilities by keeping Contact as a data model and ContactService as the manager of business logic, which makes the system easier to understand, test, and extend. I design incrementally; starting with core functionality, validating it with tests, and then refining edge cases and constraints. This project reinforced the importance of designing with maintainability in mind: clear method names, consistent validation rules, and comprehensive tests make the software easier to modify and scale without introducing regressions.
